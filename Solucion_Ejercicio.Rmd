@@ -18,10 +18,24 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(MASS)
 library(robustbase)
+
+data("mammals")
+data("Animals2")
+
 ```
 
 
 + Usa las funciones dim, head, tail, str para una primera visión de los conjuntos de datos.
+
+```{r}
+x<-mammals
+print("mammals")
+dim(x)
+head(x)
+tail(x)
+str(x)
+```
+
 
 + Muestra los nombres de las filas y las columnas (rownames, colnames)
 
